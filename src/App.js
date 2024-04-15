@@ -3,7 +3,7 @@ import sound_A from './a.mp3';
 
 const PlayA = () => {
   const [playA] = useSound(sound_A);
-  return <button onClick={playA}>vowl "A"!</button>;
+  return <button onClick={playA}>vowel "A"!</button>;
 };
 
 function App() {
