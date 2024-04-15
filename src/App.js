@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import useSound from 'use-sound';
+import sound_A from './a.mp3';
+
+const PlayA = () => {
+  const [playA] = useSound(sound_A);
+  return <button onClick={playA}>vowl "A"!</button>;
+};
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PlayA />
     </div>
   );
 }
